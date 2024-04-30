@@ -1,0 +1,72 @@
+public class StringAndStringBufferExample {
+    public static void main(String[] args) {
+        // Example using String class
+        stringExample();
+
+        // Example using StringBuffer class
+        stringBufferExample();
+    }
+
+    public static void stringExample() {
+        // Example of some commonly used methods of String class
+        String str1 = "Hello";
+        String str2 = "World";
+
+        // length() method
+        int length = str1.length();
+        System.out.println("Length of str1: " + length);
+
+        // charAt() method
+        char charAtIndex = str1.charAt(1);
+        System.out.println("Character at index 1 in str1: " + charAtIndex);
+
+        // concat() method
+        String concatenatedString = str1.concat(" " + str2);
+        System.out.println("Concatenated string: " + concatenatedString);
+
+        // indexOf() method
+        int indexOfW = concatenatedString.indexOf('W');
+        System.out.println("Index of 'W' in concatenated string: " + indexOfW);
+
+        // toLowerCase() method
+        String lowercaseString = concatenatedString.toLowerCase();
+        System.out.println("Lowercase version of concatenated string: " + lowercaseString);
+
+        // toUpperCase() method
+        String uppercaseString = concatenatedString.toUpperCase();
+        System.out.println("Uppercase version of concatenated string: " + uppercaseString);
+
+        // equals() method
+        boolean isEqual = str1.equals("Hello");
+        System.out.println("Is str1 equal to \"Hello\": " + isEqual);
+    }
+
+    public static void stringBufferExample() {
+        // Example of some commonly used methods of StringBuffer class
+        StringBuffer stringBuffer = new StringBuffer("Hello");
+
+        // append() method
+        stringBuffer.append(" World");
+        System.out.println("Appended string: " + stringBuffer);
+
+        // insert() method
+        stringBuffer.insert(5, ", ");
+        System.out.println("Inserted string: " + stringBuffer);
+
+        // reverse() method
+        stringBuffer.reverse();
+        System.out.println("Reversed string: " + stringBuffer);
+
+        // delete() method
+        stringBuffer.delete(5, 8);
+        System.out.println("Deleted string: " + stringBuffer);
+
+        // replace() method
+        stringBuffer.replace(0, 5, "Hi");
+        System.out.println("Replaced string: " + stringBuffer);
+
+        // length() method
+        int length = stringBuffer.length();
+        System.out.println("Length of stringBuffer: " + length);
+    }
+}
